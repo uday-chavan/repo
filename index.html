@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F1 Hub | Drive to Survive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    
+
+    <div class="layout">
+
+        
+        <header class="top-bar">
+            <div class="logo-wrapper">
+                <img src="f1.png" alt="F1 Logo" class="f1-logo">
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#drivers">Drivers</a></li>
+                    <li><a href="#teams">Teams</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#standings">Overall Standings</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main class="hero">
+            <div class="hero-text">
+                <h1 class="hero-title">DRIVE TO SURVIVE</h1>
+                <p class="hero-subtitle">
+                    Feel the pressure, the speed and the stories behind every race weekend.
+                </p>
+            </div>
+        </main>
+
+        
+        <div class="countdown-panel">
+            <h2>Next Race</h2>
+            <p class="race-name">Monaco Grand Prix</p>
+            <div class="countdown-timer" id="countdown">
+                <div class="time-box"><span class="number" id="days">00</span><span class="label">Days</span></div>
+                <div class="time-box"><span class="number" id="hours">00</span><span class="label">Hours</span></div>
+                <div class="time-box"><span class="number" id="minutes">00</span><span class="label">Minutes</span></div>
+                <div class="time-box"><span class="number" id="seconds">00</span><span class="label">Seconds</span></div>
+            </div>
+            <p class="race-date">25 May 2025 • 15:00 (Local Time)</p>
+        </div>
+
+    </div>
+
+   
+    <section id="drivers" class="content-section">
+        <h2>Drivers</h2>
+        <p>Selected top 5 drivers for the 2025 season.</p>
+
+        <div class="cards-grid">
+            <article class="driver-card reveal">
+                <div class="driver-photo" style="background-image:url('lando.png');"></div>
+                <div class="driver-body">
+                    <h3 class="driver-name">Lando Norris</h3>
+                    <p class="driver-team">McLaren</p>
+                </div>
+            </article>
+
+            <article class="driver-card reveal">
+                <div class="driver-photo" style="background-image:url('max.jpeg');"></div>
+                <div class="driver-body">
+                    <h3 class="driver-name">Max Verstappen</h3>
+                    <p class="driver-team">Red Bull Racing</p>
+                </div>
+            </article>
+
+            <article class="driver-card reveal">
+                <div class="driver-photo" style="background-image:url('oscar.jpg');"></div>
+                <div class="driver-body">
+                    <h3 class="driver-name">Oscar Piastri</h3>
+                    <p class="driver-team">McLaren</p>
+                </div>
+            </article>
+
+            <article class="driver-card reveal">
+                <div class="driver-photo" style="background-image:url('george.png');"></div>
+                <div class="driver-body">
+                    <h3 class="driver-name">George Russell</h3>
+                    <p class="driver-team">Mercedes</p>
+                </div>
+            </article>
+
+            <article class="driver-card reveal">
+                <div class="driver-photo" style="background-image:url('charles.jpg');"></div>
+                <div class="driver-body">
+                    <h3 class="driver-name">Charles Leclerc</h3>
+                    <p class="driver-team">Ferrari</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    
+    <section id="teams" class="content-section">
+        <h2>Teams</h2>
+        <p>5 teams competing in the 2025 season.</p>
+
+        <div class="logos-grid reveal">
+            <div class="team-logo"><img src="mclaren.jpg" alt="McLaren"></div>
+            <div class="team-logo"><img src="redbull.jpg" alt="Red Bull Racing"></div>
+            <div class="team-logo"><img src="merc.jpg" alt="Mercedes"></div>
+            <div class="team-logo"><img src="ferrari.jpg" alt="Ferrari"></div>
+            <div class="team-logo"><img src="william.png" alt="Williams"></div>
+        </div>
+    </section>
+
+   
+    <section id="calendar" class="content-section">
+        <h2>Selected Race Calendar (5 races)</h2>
+        <ol class="race-list reveal">
+
+            <li>
+              <a class="race-link" href="https://www.formula1.com/en/racing/2025/bahrain" target="_blank">
+                <strong>Bahrain Grand Prix</strong> — Sakhir
+              </a>
+            </li>
+
+            <li>
+              <a class="race-link" href="https://www.formula1.com/en/racing/2025/saudi-arabia" target="_blank">
+                <strong>Saudi Arabian Grand Prix</strong> — Jeddah
+              </a>
+            </li>
+
+            <li>
+              <a class="race-link" href="https://www.formula1.com/en/racing/2025/australia" target="_blank">
+                <strong>Australian Grand Prix</strong> — Albert Park
+              </a>
+            </li>
+
+            <li>
+              <a class="race-link" href="https://www.formula1.com/en/racing/2025/monaco" target="_blank">
+                <strong>Monaco Grand Prix</strong> — Monte Carlo
+              </a>
+            </li>
+
+            <li>
+              <a class="race-link" href="https://www.formula1.com/en/racing/2025/united-arab-emirates" target="_blank">
+                <strong>Abu Dhabi Grand Prix</strong> — Yas Marina
+              </a>
+            </li>
+
+        </ol>
+
+        <p class="small-note">Click any race to view the official results on Formula1.com</p>
+    </section>
+
+
+    <section id="standings" class="content-section">
+        <h2>2025 Overall Standings (selected)</h2>
+
+        <h3>Drivers</h3>
+        <table class="standings-table">
+            <thead>
+                <tr><th>Pos</th><th>Driver</th><th>Team</th><th>Points</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>423</td></tr>
+                <tr><td>2</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>421</td></tr>
+                <tr><td>3</td><td>Oscar Piastri</td><td>McLaren</td><td>410</td></tr>
+                <tr><td>4</td><td>George Russell</td><td>Mercedes</td><td>319</td></tr>
+                <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>242</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Constructors</h3>
+        <table class="standings-table">
+            <thead>
+                <tr><th>Pos</th><th>Team</th><th>Points</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>McLaren</td><td>833</td></tr>
+                <tr><td>2</td><td>Mercedes</td><td>469</td></tr>
+                <tr><td>3</td><td>Red Bull Racing</td><td>451</td></tr>
+                <tr><td>4</td><td>Ferrari</td><td>398</td></tr>
+                <tr><td>5</td><td>Williams</td><td>137</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
+
