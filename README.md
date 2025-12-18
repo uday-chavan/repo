@@ -1,2 +1,8 @@
-# f12
-ite website
+# \# Project Name
+
+# \## Setup
+
+# npm install
+
+# npm start
+
